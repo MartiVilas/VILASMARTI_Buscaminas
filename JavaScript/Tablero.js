@@ -1,6 +1,7 @@
 
 
 class Tablero {
+    // Propiedades asignadas a la clase Tablero
     constructor(filas, columnas, numBombas) {
         this.filas = filas;
         this.columnas = columnas;
@@ -14,7 +15,7 @@ class Tablero {
         let array = [];
         for (let i = 0; i < this.filas; i++) {
             let fila = [];
-            for (let k = 0; k < this.columnas; k++) {
+            for (let j = 0; j < this.columnas; j++) {
                 fila.push(new Casilla());
             }
             array.push(fila);
@@ -36,14 +37,18 @@ class Tablero {
         }
     }
 
-    calcularAdyacentes() {
-        for (let i = 0; i < this.filas; i++) {
-            for (let j = 0; j < this.columnas; j++) {
-                const bombasAdyacentes = this.contarBombas(i, j);
-                this.tablero[i][j].adyacentes = bombasAdyacentes;
+    contarBombas(x, y) {
+            let bombasAdyacentes = 0;
+            const casillasAdyacentes = this.obtenCasillasAdyacentes(x, y);
+
+            for (const casilla of casillasAdyacentes) {
+                if (this.tablero[casilla.x][casilla.y].bomba) {
+                    bombasAdyacentes++;
+                }
             }
-        }
-    }
+
+            return bombasAdyacentes;
+    }  
 
     obtenCasillasAdyacentes(x, y) {
         const adyacentes = [];
@@ -61,17 +66,12 @@ class Tablero {
 
         return adyacentes;
     }
-
-    contarBombas(x, y) {
-        let bombasAdyacentes = 0;
-        const casillasAdyacentes = this.obtenCasillasAdyacentes(x, y);
-
-        for (const casilla of casillasAdyacentes) {
-            if (this.tablero[casilla.x][casilla.y].bomba) {
-                bombasAdyacentes++;
+    calcularAdyacentes() {
+            for (let i = 0; i < this.filas; i++) {
+                for (let j = 0; j < this.columnas; j++) {
+                    const bombasAdyacentes = this.contarBombas(i, j);
+                    this.tablero[i][j].adyacentes = bombasAdyacentes;
+                }
             }
-        }
-
-        return bombasAdyacentes;
-    }  
+    }
 }

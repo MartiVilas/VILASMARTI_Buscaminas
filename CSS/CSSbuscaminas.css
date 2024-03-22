@@ -1,86 +1,86 @@
-.casilla-cero {
-    background-color: #ffb3b3; 
-}
+    .casilla-cero {
+        background-color: #ffb3b3; 
+    }
 
-body {
-    background-color: #f0f0d8;
-    color: #252525; 
-    font-family: "Courier New", Courier, monospace;
-}
+    body {
+        background-color: #f0f0d8;
+        color: #252525; 
+        font-family: "Times New Roman", Times, serif;
+    }
 
-header {
-    text-align: center;
-    margin-top: 5%;
-}
+    header {
+        text-align: center;
+        margin-top: 5%;
+    }
 
-form {
-    max-width: 400px;
-    margin: 0 auto;
-}
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-}
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
 
-input[type="text"],
-input[type="date"],
-input[type="email"],
-input[type="number"],
-input[type="submit"] {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    background-color: #e0e0c8; 
-    border: none;
-    border-radius: 5px;
-    color: hsl(231, 100%, 68%); 
-}
+    input[type="text"],
+    input[type="date"],
+    input[type="email"],
+    input[type="number"],
+    input[type="submit"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        background-color: #e0e0c8; 
+        border: none;
+        border-radius: 5px;
+        color: hsl(231, 100%, 68%); 
+    }
 
-input[type="submit"] {
-    padding: 10px 20px;
-    text-transform: uppercase;
-    border-radius: 8px;
-    font-size: 17px;
-    font-weight: 500;
-    color: #25252585; 
-    text-shadow: none;
-    cursor: pointer;
-    box-shadow: none;
-    border: 1px solid #25252580; 
-    transition: 0.5s ease;
-    user-select: none;
-}
+    input[type="submit"] {
+        padding: 10px 20px;
+        text-transform: uppercase;
+        border-radius: 8px;
+        font-size: 17px;
+        font-weight: 500;
+        color: #25252585; 
+        text-shadow: none;
+        cursor: pointer;
+        box-shadow: none;
+        border: 1px solid #25252580; 
+        transition: 0.5s ease;
+        user-select: none;
+    }
 
-input[type="submit"]:hover {
-    color: #ffffff; 
-    background: #008cff; 
-    border: 1px solid #008cff; 
-    text-shadow: 0 0 3px #ffffff, 0 0 15px #ffffff, 0 0 15px #ffffff; 
-    box-shadow: 0 0 3px #008cff, 0 0 15px #008cff, 0 0 40px #008cff, 0 0 10px #008cff; 
-}
+    input[type="submit"]:hover {
+        color: #ffffff; 
+        background: #008cff; 
+        border: 1px solid #008cff; 
+        text-shadow: 0 0 3px #ffffff, 0 0 15px #ffffff, 0 0 15px #ffffff; 
+        box-shadow: 0 0 3px #008cff, 0 0 15px #008cff, 0 0 40px #008cff, 0 0 10px #008cff; 
+    }
 
 
-table td {
-    width: 20px;
-    height: 20px;
-    border: 1px solid #888; 
-    text-align: center;
-    vertical-align: middle;
-    background-color: #e0e0c8;
-    cursor: pointer;
-}
+    table td {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #888; 
+        text-align: center;
+        vertical-align: middle;
+        background-color: #e0e0c8;
+        cursor: pointer;
+    }
 
-table td:hover {
-    background-color: #626252; 
-}
+    table td:hover {
+        background-color: #626252; 
+    }
 
-#TableroContainer {
-    margin-top: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    #TableroContainer {
+        margin-top: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-}
+    }

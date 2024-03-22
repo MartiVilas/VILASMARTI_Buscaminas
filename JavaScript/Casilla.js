@@ -9,18 +9,18 @@ class Casilla {
         this.bomba = false;
         this.descubierta = false;
         this.bandera = false;
-        this.descubrirCasilla();
-        this.colocarBandera();
+        this.abrirCasilla();
+        this.ponerBandera();
     }
     
-    // Métodos
-    descubrirCasilla(){
+    // Métodos de a clase Casilla
+    abrirCasilla(){
         if (this.descubierta) {
             this.descubierta = true;
         }
     }
 
-    colocarBandera(){
+    ponerBandera(){
         if (this.bandera) {
             this.bandera = true;
         }
