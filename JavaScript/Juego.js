@@ -167,10 +167,8 @@
                     celda.addEventListener("click", () => {
                         if (casilla.bomba) {
                             celda.textContent = "*";
-                            setTimeout(() => {
                                 alert("¡Oh no una bombaa! \n Fin del juego.");
                                 mostrarFormulario();
-                            }, 2000);
                         } else {
                             revelarCasilla(tablero, i, j);
                             if (finalizarPartida(tablero)) {
